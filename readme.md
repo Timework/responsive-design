@@ -1,2 +1,2 @@
 This is a project for the Odin Project to practice responsive design.
-Cloning of the website https://thenextweb.com/. Link to the lesson https://www.theodinproject.com/lessons/building-with-responsive-design.
+Cloning of the website https://thenextweb.com/. Link to the lesson https://www.theodinproject.com/lessons/building-with-responsive-design. First attempt at responsive design. Completed: 07/04/2020

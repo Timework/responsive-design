@@ -2,6 +2,7 @@
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
+    overflow: none;
 }
 nav {
     position: absolute;
@@ -10,6 +11,7 @@ nav {
     Display: flex;
     background-color: black;
     justify-content: space-between;
+    z-index: 10;
 }
 nav ul, footer ul {
     display: flex;
@@ -48,11 +50,17 @@ nav li:hover, footer li:hover {
 }
 .nav-2-right {
     margin: 0 5px;
+    display: flex;
 }
 .nav-2-icon {
     color: rgb(163, 162, 162);
     padding: 15px 15px;
     border-right: 1px solid lightgrey;
+}
+.nav-2-icon-2 {
+    color: #f42;
+    padding: 15px 15px;
+    border-left: 1px solid lightgrey;
 }
 .nav-2-icon:hover {
     color: black;
@@ -342,6 +350,7 @@ footer {
     display: flex;
     background-color: rgba(255,68,34,.06);
     margin: 2px 0;
+    justify-content: space-between;
 }
 .after-image-image {
     min-width: 96px;
@@ -435,4 +444,200 @@ footer {
 .after-image-image-9 {
     background-image: url("https://i.ytimg.com/vi/ioNng23DkIM/hqdefault.jpg");
 }
+.image-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 10px;
+    padding: 10px;
+}
+.image-grid-1 {
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/Reliance-Jio-ft-796x420.jpg");
+    width: 100%;
+    background-position: 50%;
+    background-size: cover;
+}
+.image-grid-2 {
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/lasso-facebook-app-1-796x419.jpg");
+    width: 100%;
+    background-position: 50%;
+    background-size: cover;
+    margin-bottom: 10px;
+}
+.image-grid-3 {
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/10/Juiced-CCX-e-bike-ebike-CrossCurrent-X-1-of-1-796x417.jpg");
+    width: 100%;
+    background-position: 50%;
+    background-size: cover;
+}
+.third-layer {
+    background: linear-gradient( rgba(255,0,0,0), rgba(0,0,0,1));
+    position: relative;
+    padding-top: 40%;
+    height: 3%;
+    background-size: cover;
+    width: 100%;
+}
+.image-words {
+    position: absolute;
+    bottom: 0;
+    margin: 10px;
+}
+.image-words-title {
+    color: white;
+    font-size: 52px;
+    margin-bottom: 10px;
+}
+.image-words-bottom {
+    color: #555;
+    font-size: 12px;
+}
+.image-words-mini {
+    color: white;
+    font-size: 26px;
+}
+.image-words-top {
+    color: white;
+    font-size: 16px;
+}
+.handi {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+    border-radius: 50%;
+    background-color: blue;
+    color: white;
+    font-size: 28px;
+    padding: 10px;
+    z-index: 10;
+}
+.deal-title {
+    display: flex;
+    justify-content: space-between;
+}
+.deals-right {
+    color: #f42;
+}
+.nav-img {
+    background-color: red;
+    padding: 11px 20px;
+    height: 24px;
+    width: 66px;
+    margin: 0;
+}
+#overwrite {
+    margin: 0;
+}
+.nav-2-left-holder {
+    display: flex;
+}
+.hidden-1, .hidden-2 {
+    display: none;
+}
+#hidden-2 {
+    display: none;
+}
+@media only screen and (max-width: 1024px) {
+.news-items {
+    grid-template-columns: repeat(3, 1fr);
+}
+.hidden-1 {
+    display: block;
+}
+.handi {
+    margin: 0;
+    border-radius: 0;
+    font-size: 16px;
+    padding: 5px;
+}
+.to-hide-1 {
+    display: none;
+}
+.funding-info {
+    grid-template-columns: repeat(3, 1fr);
+}
+.group-info {
+    grid-template-columns: repeat(2, 1fr);
+}
+.deal-items {
+    grid-template-columns: repeat(3, 1fr);
+}
+.image-words-title {
+    font-size: 36px;
+}
+.image-words-mini {
+    font-size: 20px;
+}
+}
+@media only screen and (max-width: 765px) {
+    nav {
+        display: none;
+    }
+    .deal-items {
+    grid-template-columns: repeat(1, 1fr);
+    }
+    .group-info {
+    grid-template-columns: repeat(1, 1fr);
+}
+.funding-info {
+    grid-template-columns: repeat(1, 1fr);
+}
+.news-items {
+    grid-template-columns: repeat(1, 1fr);
+}
+.deal-adapt {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+}
+.deal-push {
+    margin-left: 10px;
+}
+.nav-2 ul {
+    display: none;
+}
+.nav-2 {
+    margin: 0;
+}
+#hidden-2 {
+    display: block;
+}
+.image-grid {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0 10px;
+}
+.image-words-title {
+    font-size: 20px;
+}
+.third-layer {
+    padding-top: 20%;
+}
+.image-grid-1 {
+    margin: 10px;
+}
+.image-grid-2 {
+    margin: 0 10px 10px 10px;
+}
+.image-grid-3 {
+    margin: 0 10px 10px 10px;
+}
+.news-adap {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+}
+.news-push {
+    margin-left: 10px;
+}
+.funding-title {
+    display: block;
+}
+.left-border {
+    border-left: none;
+}
+.funding-title li {
+    margin: 10px 0;
+}
+.funding-title ul {
+    display: block;
+}
 
+}
